@@ -26,7 +26,8 @@ It intelligently filters user queries, matches them against known diseases, and 
 - Loads flan-t5-base model
 - Retrieves top 3 documents -  via vector store
 - Generates an answer using LangChain's RetrievalQA
-**- Answer Display**
+  
+**Answer Display**
 - Displays the result only if the matched disease appears in the source documents
 
 
