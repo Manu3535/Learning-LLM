@@ -9,7 +9,7 @@ It intelligently filters user queries, matches them against known diseases, and 
 **Features**
 - Stopword filtering to extract meaningful keywords from user queries
 -  Disease name matching using a Delta table
--  Vector search to retrieve top-k relevant documents
+-  Vector search to retrieve top-k relevant documents (2 PDF documents, one related to migraine and anothere related to dengue have been used along with an API link to get html response related to headaches for testing)
 -  Text generation using google/flan-t5-base via Hugging Face
 -  Conditional response rendering based on disease presence in source documents
 -  Databricks widget integration for interactive query input
@@ -20,7 +20,7 @@ It intelligently filters user queries, matches them against known diseases, and 
 - Keyword Extraction:
 - Removes stopwords and tokenizes the query
 - Disease Matching:
-- Compares query tokens with disease names from workspace.llm.diseases Delta table
+- Compares query tokens with disease names from workspace.llm.diseases Delta table. A common set of diseases list has been downloaded from Kaggle and uploaded to a delta table.
 - RAG Pipeline Execution:
 - If a match is found:
 - Loads flan-t5-base model
