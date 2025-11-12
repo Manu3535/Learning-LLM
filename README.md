@@ -6,7 +6,7 @@ This project is a Retrieval-Augmented Generation (RAG) pipeline built in Databri
 - Hugging Face language models
 It intelligently filters user queries, matches them against known diseases, and generates context-aware answers using relevant source documents.
 
-** Features**
+**Features**
 - Stopword filtering to extract meaningful keywords from user queries
 -  Disease name matching using a Delta table
 -  Vector search to retrieve top-k relevant documents
